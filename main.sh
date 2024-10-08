@@ -40,7 +40,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[96;1m              WELCOME TO SCRIPT Hasbistore              \033[0m"
+echo -e "\033[96;1m              WELCOME TO SCRIPT LionKingVPN              \033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 3
@@ -62,7 +62,7 @@ checking_sc() {
     echo -e "   \033[0;33mYour VPS\033[0m $ipsaya \033[0;33mHas been Banned\033[0m"
     echo -e "     \033[0;33mBuy access permissions for scripts\033[0m"
     echo -e "             \033[0;33mContact Admin :\033[0m"
-	echo -e "      \033[2;32mTelegram\033[0m t.me/Hasbistore"
+	echo -e "      \033[2;32mTelegram\033[0m t.me/LionKingVPN"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     exit
   fi
@@ -139,7 +139,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://raw.githubusercontent.com/Hasbistore/sc/main/"
+REPO="https://raw.githubusercontent.com/LionKingVPN/sc/main/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -288,12 +288,12 @@ echo -e "   \e[1;32mPlease Enter Your Name $NC"
 echo "IP=" >> /var/lib/kyt/ipvps.conf
 echo $host1 > /etc/xray/domain
 echo $host1 > /root/domain
-echo "Hasbistore" > /etc/xray/username
+echo "LionKingVPN" > /etc/xray/username
 echo ""
 elif [[ $host == "2" ]]; then
 wget ${REPO}Fls/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
-echo "Hasbistore" > /etc/xray/username
+echo "LionKingVPN" > /etc/xray/username
 clear
 else
 print_install "Random Subdomain/Domain is Used"
@@ -317,7 +317,7 @@ TEXT="
 <code>Exp Sc : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/Hasbistore"},{"text":"Channel","url":"https://t.me/ExFirefly"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/LionKingVPN"},{"text":"Channel","url":"https://t.me/ExFirefly"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
@@ -479,7 +479,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service limit Quota"
-wget raw.githubusercontent.com/Hasbistore/sc/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
+wget raw.githubusercontent.com/LionKingVPN/sc/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}Fls/limit-ip"
 chmod +x /usr/bin/*
@@ -770,7 +770,7 @@ clear
 }
 function noobzvpn(){
 clear
-wget --no-check-certificate https://raw.githubusercontent.com/Hasbistore/sc/main/noobzvpns.zip
+wget --no-check-certificate https://raw.githubusercontent.com/LionKingVPN/sc/main/noobzvpns.zip
 unzip noobzvpns.zip
 cd noobzvpns
 bash install.sh
@@ -816,7 +816,7 @@ function menu(){
 clear
 print_install "Memasang Menu Packet"
 wget ${REPO}Cdy/menu.zip
-wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/Hasbistore/sc/main/Enc/encrypt" ; chmod +x /usr/bin/enc
+wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/LionKingVPN/sc/main/Enc/encrypt" ; chmod +x /usr/bin/enc
 7z x -pPahlawan95 menu.zip
 chmod +x menu/*
 enc menu/*
